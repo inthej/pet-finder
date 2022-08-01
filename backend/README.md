@@ -4,6 +4,8 @@
 ```
 $ npm init -y
 $ npm i express
+$ npm i dotenv
+$ npm i mysql2
 ```
 
 ## Reference
