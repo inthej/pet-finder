@@ -1,52 +1,41 @@
 import './styles/screen.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHeart, faList, faLocationDot, faSearch, faTag} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <>
-      {/* menu */}
-      <nav>
-        <ul>
-          <li>
-            <a href="http://localhost:3000/">Search</a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">Map</a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">Community</a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">Support</a>
-          </li>
-        </ul>
-      </nav>
-      {/* main article */}
-      <article>
-        <h1>펫을 찾아요</h1>
-        <picture>
-          <source
-            media="(min-width: 40em)"
-            srcSet="http://placehold.it/720x405 1x, http://placehold.it/1440x810 2x"
-          />
-          <source srcSet="http://placehold.it/405x228 1x, http://placehold.it/810x456 2x" />
-          <img src="http://placehold.it/705x405" alt="" />
-        </picture>
-        <p className="lead">
-          Maecenas sed diam eget risus varius blandit sit amet non magna. Integer
-          posuere erat a ante venenatis dapibus posuere velit aliquet.
-        </p>
-        <p>
-          Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies
-          vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl
-          consectetur et.Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
-          tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-          dolor auctor. Cum sociis natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies
-          vehicula ut id elit.
-        </p>
-      </article>
+      <aside>
+        <p>반려동물 찾기</p>
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faSearch} className="icon"/>
+          검색
+        </a>
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faLocationDot} className="icon"/>
+          지도
+        </a>
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faList} className="icon"/>
+          커뮤니티
+        </a>
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faHeart} className="icon"/>
+          후원하기
+        </a>
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faTag} className="icon"/>
+          태그
+        </a>
+      </aside>
+      <div className="social">
+        <a
+          href="http://localhost:3000/"
+          // target="_blank"
+        >
+          <i className="fa fa-linkedin" />
+        </a>
+      </div>
     </>
   );
 }
