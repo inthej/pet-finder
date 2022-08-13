@@ -1,39 +1,44 @@
 import './styles/screen.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart, faList, faLocationDot, faSearch, faTag} from "@fortawesome/free-solid-svg-icons";
+import {
+  faDog,
+  faHandHoldingHeart,
+  faLink,
+  faList,
+  faLocationDot,
+  faSearch,
+  faTag
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <>
       <aside>
-        <p>반려동물 찾기</p>
+        <p>Pet Finder</p>
         <a href="http://localhost:3000/">
           <FontAwesomeIcon icon={faSearch} className="icon"/>
-          검색
+          Search
         </a>
         <a href="http://localhost:3000/">
           <FontAwesomeIcon icon={faLocationDot} className="icon"/>
-          지도
+          Map
         </a>
         <a href="http://localhost:3000/">
           <FontAwesomeIcon icon={faList} className="icon"/>
-          커뮤니티
+          Community
         </a>
         <a href="http://localhost:3000/">
-          <FontAwesomeIcon icon={faHeart} className="icon"/>
-          후원하기
+          <FontAwesomeIcon icon={faHandHoldingHeart} className="icon"/>
+          Support
         </a>
         <a href="http://localhost:3000/">
           <FontAwesomeIcon icon={faTag} className="icon"/>
-          태그
+          Tags
         </a>
       </aside>
       <div className="social">
-        <a
-          href="http://localhost:3000/"
-          // target="_blank"
-        >
-          <i className="fa fa-linkedin" />
+        <a href="http://localhost:3000/">
+          <FontAwesomeIcon icon={faLink} className="social-icon"/>
         </a>
       </div>
     </>
