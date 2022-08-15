@@ -1,4 +1,20 @@
-aside {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar p {
+    margin: 0;
+    padding: 40px 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
     color: #fff;
     width: 250px;
     padding-left: 20px;
@@ -7,7 +23,13 @@ aside {
     border-top-right-radius: 80px;
 }
 
-aside a {
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
     font-size: 12px;
     color: #fff;
     display: block;
@@ -16,7 +38,7 @@ aside a {
     -webkit-tap-highlight-color:transparent;
 }
 
-aside a:hover {
+.sidebar ul li:hover {
     color: #3f5efb;
     background: #fff;
     outline: none;
@@ -25,51 +47,22 @@ aside a:hover {
     border-bottom-left-radius: 20px;
 }
 
-aside a .icon {
+.sidebar ul li .icon {
     margin-right: 5px;
 }
 
-aside a:hover::after {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    bottom: 100%;
-    right: 0;
-    height: 35px;
-    width: 35px;
-    border-bottom-right-radius: 18px;
-    box-shadow: 0 20px 0 0 #fff;
+.footer {
+    font-size: 12px;
+    position: fixed;
+    padding: 12px 12px 12px 30px;
+    bottom: 20px;
 }
 
-aside a:hover::before {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    top: 38px;
-    right: 0;
-    height: 35px;
-    width: 35px;
-    border-top-right-radius: 18px;
-    box-shadow: 0 -20px 0 0 #fff;
-}
-
-aside p {
-    margin: 0;
-    padding: 40px 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-}
-
-.social {
+.toplink {
     height: 0;
 }
 
-.social .social-icon {
+.toplink .icon {
     width: 14px;
     height: 14px;
     font-size: 14px;
@@ -80,4 +73,10 @@ body {
     border-radius: 50%;
     top:5px;
     right:5px;
+}
+
+.content {
+    margin-left: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
