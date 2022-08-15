@@ -1,4 +1,3 @@
-import './styles/screen.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faComment,
@@ -9,6 +8,7 @@ import {
   faSearch,
   faTag
 } from "@fortawesome/free-solid-svg-icons";
+import './App.css';
 
 function App() {
   return (

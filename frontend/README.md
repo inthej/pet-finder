@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Install
 ```
-$ npm init react-app .
-$ npm i --save @fortawesome/fontawesome-svg-core
-$ npm i --save @fortawesome/free-solid-svg-icons
-$ npm i --save @fortawesome/react-fontawesome
-$ npm i --save @fortawesome/free-regular-svg-icons
+$ yarn create react-app frontend && cd frontend
+$ yarn add @fortawesome/fontawesome-svg-core
+$ yarn add @fortawesome/free-solid-svg-icons
+$ yarn add @fortawesome/react-fontawesome
+$ yarn add @fortawesome/free-regular-svg-icons
 
 ```
 
