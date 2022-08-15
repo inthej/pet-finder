@@ -5,11 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Install
 ```
 $ yarn create react-app frontend && cd frontend
-$ yarn add @fortawesome/fontawesome-svg-core
-$ yarn add @fortawesome/free-solid-svg-icons
-$ yarn add @fortawesome/react-fontawesome
-$ yarn add @fortawesome/free-regular-svg-icons
-
+$ yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons
+$ yarn add react-router-dom
+$ yarn add prop-types
+$ yarn add styled-components
 ```
 
 ## Reference
