@@ -1,12 +1,12 @@
 import React from 'react'
 
-const RouteWithLayout = (props) => {
+const LayoutWithComponent = (props) => {
   const {layout: Layout, component: Component, ...rest} = props;
   return (
     <Layout {...rest}>
-      <Component {...rest} />
+      <Component/>
     </Layout>
   );
 }
 
-export default RouteWithLayout
+export default LayoutWithComponent
