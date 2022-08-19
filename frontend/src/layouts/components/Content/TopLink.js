@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropType from 'prop-types'
 import React from 'react'
 import styled from "styled-components";
-import '../../../App.css'
 
 const Container = styled.div`
   height: 0;

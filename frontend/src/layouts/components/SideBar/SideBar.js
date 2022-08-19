@@ -7,9 +7,8 @@ import {
   faTag
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from 'react'
-import '../../../App.css'
 import PropType from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
 import Footer from "./Footer";
 
@@ -54,7 +53,7 @@ const MenuItem = styled.li`
   }
 `
 
-const MenuIcon = styled(FontAwesomeIcon)`
+const FontIcon = styled(FontAwesomeIcon)`
   margin-right: 5px;
 `
 
@@ -64,12 +63,12 @@ const SideBar = props => {
     <Container className={className}>
       <Paragraph>Pet Finder</Paragraph>
       <MenuList>
-        <MenuItem><MenuIcon icon={faSearch} className="icon"/>검색</MenuItem>
-        <MenuItem><MenuIcon icon={faLocationDot} className="icon"/>지도</MenuItem>
-        <MenuItem><MenuIcon icon={faComment} className="icon"/>찾아주세요</MenuItem>
-        <MenuItem><MenuIcon icon={faHouse} className="icon"/>보호중입니다</MenuItem>
-        <MenuItem><MenuIcon icon={faHandHoldingHeart} className="icon"/>후원하기</MenuItem>
-        <MenuItem><MenuIcon icon={faTag} className="icon"/>태그</MenuItem>
+        <MenuItem><FontIcon icon={faSearch}/>검색</MenuItem>
+        <MenuItem><FontIcon icon={faLocationDot}/>지도</MenuItem>
+        <MenuItem><FontIcon icon={faComment}/>찾아주세요</MenuItem>
+        <MenuItem><FontIcon icon={faHouse}/>보호중입니다</MenuItem>
+        <MenuItem><FontIcon icon={faHandHoldingHeart}/>후원하기</MenuItem>
+        <MenuItem><FontIcon icon={faTag}/>태그</MenuItem>
       </MenuList>
       <Footer isLogin={false}/>
     </Container>
