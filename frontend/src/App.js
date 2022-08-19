@@ -1,14 +1,14 @@
 import React from 'react'
+import { Navigate, Route, Routes } from "react-router-dom";
 import './App.css'
-import Search from "./pages/Search"
-import Map from "./pages/Map"
-import Find from "./pages/Find"
-import Care from "./pages/Care"
-import Support from "./pages/Support"
-import Tag from "./pages/Tag"
-import {Route, Routes, Navigate} from "react-router-dom";
 import LayoutWithComponent from "./layouts/LayoutWithComponent";
 import MainLayout from "./layouts/MainLayout";
+import Care from "./pages/Care"
+import Find from "./pages/Find"
+import Map from "./pages/Map"
+import Search from "./pages/Search"
+import Support from "./pages/Support"
+import Tag from "./pages/Tag"
 
 function App() {
   return (

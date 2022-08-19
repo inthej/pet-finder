@@ -1,14 +1,12 @@
-import Sidebar from "../components/Sidebar";
 import Content from "../components/Content";
-import TopLink from "../components/TopLink";
+import SideBar from "../components/SideBar";
 
 const MainLayout = props => {
   const { children } = props
   return (
     <>
-      <Sidebar className="sidebar"/>
+      <SideBar className="sidebar"/>
       <Content className="content">
-        <TopLink className='toplink'/>
         {children}
       </Content>
     </>
