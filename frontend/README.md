@@ -19,3 +19,4 @@ $ yarn add react-helmet
 - css box-sizing: [https://opentutorials.org/course/2418/13405](https://opentutorials.org/course/2418/13405)
 - css inline block: [https://www.inflearn.com/blogs/376](https://www.inflearn.com/blogs/376)
 - css sample: [https://codepen.io/FlorinCornea/pen/YzGeprR](https://codepen.io/FlorinCornea/pen/YzGeprR)
+- css masonry layout: [https://opentutorials.org/module/2398/13712](https://opentutorials.org/module/2398/13712)
