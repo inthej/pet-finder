@@ -56,6 +56,7 @@ const MenuItem = styled.li`
 
 const MenuIcon = styled(FontAwesomeIcon)`
   margin-right: 5px;
+  width: 12px;
 `
 
 const menus = [

@@ -1,6 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
 import PropType from 'prop-types'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
 
 const Container = styled.div`
   font-size: 12px;
@@ -27,13 +28,34 @@ const Delimiter = styled(MenuItem)`
 
 const Footer = (props) => {
   const { isLogin } = props
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    navigate('/login', { replace: true })
+  }
+
+  const handleLogin = () => {
+    navigate('/login', { replace: true })
+  }
+
+  const handleUserAbout = () => {
+    navigate('/user/about', { replace: true })
+  }
+
+  const handleSignup = () => {
+    navigate('/signup', { replace: true })
+  }
 
   return (
     <Container>
       <MenuList>
-        <MenuItem>{isLogin ? '로그아웃' : '로그인'}</MenuItem>
+        <MenuItem onClick={isLogin ? handleLogout : handleLogin}>
+          {isLogin ? '로그아웃' : '로그인'}
+        </MenuItem>
         <Delimiter>|</Delimiter>
-        <MenuItem>{isLogin ? '내정보' : '회원가입'}</MenuItem>
+        <MenuItem onClick={isLogin ? handleUserAbout : handleSignup}>
+          {isLogin ? '내정보' : '회원가입'}
+        </MenuItem>
       </MenuList>
     </Container>
   )
