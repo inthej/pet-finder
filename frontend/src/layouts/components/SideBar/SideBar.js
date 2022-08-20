@@ -27,6 +27,7 @@ const Container = styled.div`
 const Paragraph = styled.p`
   margin: 0;
   padding: 40px 0;
+  cursor: pointer;
 `
 
 const MenuList = styled.ul`
@@ -56,7 +57,7 @@ const MenuItem = styled.li`
 
 const MenuIcon = styled(FontAwesomeIcon)`
   margin-right: 5px;
-  width: 12px;
+  width: 15px;
 `
 
 const menus = [
@@ -81,7 +82,7 @@ const SideBar = (props) => {
 
   return (
     <Container className={className}>
-      <Paragraph>Pet Finder</Paragraph>
+      <Paragraph onClick={() => handleClick('/')}>Pet Finder</Paragraph>
       <MenuList>
         {menus.map((menu, menuIndex) => (
           <MenuItem key={menuIndex} onClick={() => handleClick(menu.link)}>
