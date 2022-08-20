@@ -1,8 +1,8 @@
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropType from 'prop-types'
 import React from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Container = styled.div`
   height: 0;
@@ -13,24 +13,24 @@ const TopLinkIcon = styled(FontAwesomeIcon)`
   font-size: 14px;
   position: fixed;
   color: #fff;
-  background: #0077B5;
+  background: #0077b5;
   padding: 10px;
   border-radius: 50%;
   top: 5px;
   right: 5px;
 `
 
-const TopLink = props => {
+const TopLink = (props) => {
   const { className } = props
   return (
     <Container className={className}>
-      <TopLinkIcon icon={faLink}/>
+      <TopLinkIcon icon={faLink} />
     </Container>
   )
 }
 
 React.PropType = {
-  className: PropType.string
+  className: PropType.string,
 }
 
 export default TopLink

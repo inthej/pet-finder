@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Care = props => {
+const Care = (props) => {
   return <>Care</>
 }
 

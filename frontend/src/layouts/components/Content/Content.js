@@ -1,7 +1,6 @@
 import PropType from 'prop-types'
-import React from "react";
-import styled from "styled-components";
-import TopLink from "./TopLink";
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   margin-left: 250px;
@@ -9,19 +8,14 @@ const Container = styled.div`
   padding-left: 20px;
 `
 
-const Content = props => {
+const Content = (props) => {
   const { className, children } = props
-  return (
-    <Container className={className}>
-      <TopLink className='toplink'/>
-      {children}
-    </Container>
-  )
+  return <Container className={className}>{children}</Container>
 }
 
 React.propType = {
   className: PropType.string,
-  children: PropType.node
+  children: PropType.node,
 }
 
 export default Content

@@ -8,7 +8,9 @@ $ yarn create react-app frontend && cd frontend
 $ yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons
 $ yarn add react-router-dom
 $ yarn add prop-types
-$ yarn add styled-components
+$ yarn add styled-components, styled-reset
+$ yarn add react-kakao-maps-sdk
+$ yarn add --dev --exact prettier
 ```
 
 ## Reference

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Find = props => {
+const Find = (props) => {
   return <>Find</>
 }
 

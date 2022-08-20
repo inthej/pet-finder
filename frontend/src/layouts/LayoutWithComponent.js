@@ -1,12 +1,12 @@
 import React from 'react'
 
 const LayoutWithComponent = (props) => {
-  const {layout: Layout, component: Component, ...rest} = props;
+  const { layout: Layout, component: Component, ...rest } = props
   return (
     <Layout {...rest}>
-      <Component/>
+      <Component />
     </Layout>
-  );
+  )
 }
 
 export default LayoutWithComponent

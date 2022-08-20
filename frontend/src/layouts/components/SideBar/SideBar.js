@@ -4,13 +4,14 @@ import {
   faHouse,
   faLocationDot,
   faSearch,
-  faTag
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  faTag,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropType from 'prop-types'
-import React from 'react'
+import React, { useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
-import Footer from "./Footer";
+import Footer from './Footer'
 
 const Container = styled.div`
   position: fixed;
@@ -53,30 +54,48 @@ const MenuItem = styled.li`
   }
 `
 
-const FontIcon = styled(FontAwesomeIcon)`
+const MenuIcon = styled(FontAwesomeIcon)`
   margin-right: 5px;
 `
 
-const SideBar = props => {
+const menus = [
+  { link: '/search', title: '검색', icon: faSearch },
+  { link: '/map', title: '지도', icon: faLocationDot },
+  { link: '/find', title: '찾아주세요', icon: faComment },
+  { link: '/care', title: '보호중입니다', icon: faHouse },
+  { link: '/support', title: '후원하기', icon: faHandHoldingHeart },
+  { link: '/tag', title: '태그', icon: faTag },
+]
+
+const SideBar = (props) => {
   const { className } = props
+  const navigate = useNavigate()
+
+  const handleClick = useCallback(
+    (link) => {
+      navigate(link, { replace: false })
+    },
+    [navigate],
+  )
+
   return (
     <Container className={className}>
       <Paragraph>Pet Finder</Paragraph>
       <MenuList>
-        <MenuItem><FontIcon icon={faSearch}/>검색</MenuItem>
-        <MenuItem><FontIcon icon={faLocationDot}/>지도</MenuItem>
-        <MenuItem><FontIcon icon={faComment}/>찾아주세요</MenuItem>
-        <MenuItem><FontIcon icon={faHouse}/>보호중입니다</MenuItem>
-        <MenuItem><FontIcon icon={faHandHoldingHeart}/>후원하기</MenuItem>
-        <MenuItem><FontIcon icon={faTag}/>태그</MenuItem>
+        {menus.map((menu, menuIndex) => (
+          <MenuItem key={menuIndex} onClick={() => handleClick(menu.link)}>
+            <MenuIcon icon={menu.icon} />
+            {menu.title}
+          </MenuItem>
+        ))}
       </MenuList>
-      <Footer isLogin={false}/>
+      <Footer isLogin={false} />
     </Container>
   )
 }
 
 React.PropType = {
-  className: PropType.string
+  className: PropType.string,
 }
 
 export default SideBar

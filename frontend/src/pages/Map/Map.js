@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Map = props => {
+const Map = (props) => {
   return <>Map</>
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 import PropType from 'prop-types'
 
 const Container = styled.div`
@@ -25,7 +25,7 @@ const Delimiter = styled(MenuItem)`
   cursor: default;
 `
 
-const Footer = props => {
+const Footer = (props) => {
   const { isLogin } = props
 
   return (
@@ -40,11 +40,11 @@ const Footer = props => {
 }
 
 Footer.defaultProps = {
-  isLogin: false
+  isLogin: false,
 }
 
 React.PropType = {
-  isLogin: PropType.bool
+  isLogin: PropType.bool,
 }
 
 export default Footer
