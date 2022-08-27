@@ -4,200 +4,111 @@ import './Search.css'
 const Search = (props) => {
   return (
     <>
-      <div className="searchArea">
-        <h4 className="hide">검색영역</h4>
-        <ul className="searchList">
-          <li className="first">
-            <dl>
-              <dt>
-                <label htmlFor="searchSDate">날짜</label>
-              </dt>
-              <dd>
-                <input
-                  type="date"
-                  name="searchSDate"
-                  id="searchSDate"
-                  className="inputDate"
-                  title="시작일"
-                  onBlur="$('.calendar').hide();"
-                  maxLength="10/"
-                />{' '}
-                ~{' '}
-                <input
-                  type="date"
-                  name="searchEDate"
-                  id="searchEDate"
-                  title="마감일"
-                  className="inputDate"
-                  onBlur="$('.calendar').hide();"
-                  maxLength="10/"
-                />
-                (날짜는 접수일 기준입니다)
-              </dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>
-                <label htmlFor="searchUprCd">시도</label>
-              </dt>
-              <dd>
-                <select name="searchUprCd" id="searchUprCd" title="시도선택" className="selectM">
-                  <option value="">전체</option>
+      <div className="searchBar">
+        <label>
+          <select>
+            <option>전 국</option>
+            <option>서울특별시</option>
+            <option>부산광역시</option>
+            <option>대구광역시</option>
+            <option>인천광역시</option>
+            <option>광주광역시</option>
+            <option>세종특별자치시</option>
+            <option>대전광역시</option>
+            <option>울산광역시</option>
+            <option>경기도</option>
+            <option>강원도</option>
+            <option>충청북도</option>
+            <option>충청남도</option>
+            <option>전라북도</option>
+            <option>전라남도</option>
+            <option>경상북도</option>
+            <option>경상남도</option>
+            <option>제주특별자치도</option>
+          </select>
+        </label>
+        <label>
+          <select>
+            <option>모든지역</option>
+            <option>강릉시</option>
+            <option>고성군</option>
+            <option>동해시</option>
+            <option>삼척시</option>
+            <option>속초시</option>
+            <option>양구군</option>
+            <option>양양군</option>
+            <option>영월군</option>
+            <option>원주시</option>
+            <option>인제군</option>
+            <option>정선군</option>
+            <option>철원군</option>
+            <option>춘천시</option>
+            <option>태백시</option>
+            <option>평창군</option>
+            <option>홍천군</option>
+            <option>화천군</option>
+            <option>횡성군</option>
+          </select>
+        </label>
+        <label>
+          <select>
+            <option>종류</option>
+            <option>개</option>
+            <option>고양이</option>
+            <option>기타</option>
+          </select>
+        </label>
 
-                  <option value="6110000">서울특별시</option>
+        <input type="date" />
 
-                  <option value="6260000">부산광역시</option>
+        <input type="date" />
 
-                  <option value="6270000">대구광역시</option>
-
-                  <option value="6280000">인천광역시</option>
-
-                  <option value="6290000">광주광역시</option>
-
-                  <option value="5690000">세종특별자치시</option>
-
-                  <option value="6300000">대전광역시</option>
-
-                  <option value="6310000">울산광역시</option>
-
-                  <option value="6410000">경기도</option>
-
-                  <option value="6420000">강원도</option>
-
-                  <option value="6430000">충청북도</option>
-
-                  <option value="6440000">충청남도</option>
-
-                  <option value="6450000">전라북도</option>
-
-                  <option value="6460000">전라남도</option>
-
-                  <option value="6470000">경상북도</option>
-
-                  <option value="6480000">경상남도</option>
-
-                  <option value="6500000">제주특별자치도</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label htmlFor="searchOrgCd">시군구</label>
-              </dt>
-              <dd>
-                <select name="searchOrgCd" id="searchOrgCd" title="시군구선택" className="selectM">
-                  <option value="">전체</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label htmlFor="searchCareRegNo">보호센터</label>
-              </dt>
-              <dd>
-                <select
-                  name="searchCareRegNo"
-                  id="searchCareRegNo"
-                  title="보호센터선택"
-                  className="selectM"
-                >
-                  <option value="">전체</option>
-                </select>
-              </dd>
-            </dl>
-          </li>
-          <li className="last">
-            <dl>
-              <dt>
-                <label htmlFor="searchUpKindCd">축종</label>
-              </dt>
-              <dd>
-                <select
-                  name="searchUpKindCd"
-                  id="searchUpKindCd"
-                  title="축종선택"
-                  className="selectM"
-                >
-                  <option value="">전체</option>
-                  <option value="417000">개</option>
-                  <option value="422400">고양이</option>
-                  <option value="429900">기타</option>
-                </select>
-                <select name="searchKindCd" id="searchKindCd" title="종류선택" className="selectM">
-                  <option value="">전체</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label htmlFor="searchSexCd">성별</label>
-              </dt>
-              <dd>
-                <select name="searchSexCd" id="searchSexCd" title="성별선택" className="selectM">
-                  <option value="">전체</option>
-                  <option value="F">암컷</option>
-                  <option value="M">수컷</option>
-                  <option value="Q">미상</option>
-                </select>
-                <a href="javascript:;" id="search_button" className="searchBtn">
-                  조회
-                </a>
-              </dd>
-            </dl>
-          </li>
-        </ul>
+        <input id="search-submit" type="button" value="Search" />
       </div>
 
       <div id="columns">
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg" alt="cinderella" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg" />
           <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg" alt="rapunzel" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg" />
           <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg" alt="belle" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg" />
           <figcaption>Belle, based on 1770’s French court fashion</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg" alt="mulan_2" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg" />
           <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
         </figure>
 
         <figure>
-          <img
-            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sleeping-beauty.jpg"
-            alt="sleeping-beauty"
-          />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sleeping-beauty.jpg" />
           <figcaption>Sleeping Beauty, based on European fashions in 1485</figcaption>
         </figure>
 
         <figure>
-          <img
-            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pocahontas_2.jpg"
-            alt="pocahontas_2"
-          />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pocahontas_2.jpg" />
           <figcaption>Pocahontas based on 17th century Powhatan costume</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-white.jpg" alt="snow-white" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-white.jpg" />
           <figcaption>Snow White, based on 16th century German fashion</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ariel.jpg" alt="ariel" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ariel.jpg" />
           <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
         </figure>
 
         <figure>
-          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/tiana.jpg" alt="tiana" />
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/tiana.jpg" />
           <figcaption>
             Tiana wearing the <i>robe de style</i> of the 1920’s
           </figcaption>

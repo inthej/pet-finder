@@ -1,6 +1,6 @@
 
 #columns {
-    column-width: 250px;
+    column-width: 236px;
     column-gap: 15px;
     width: 90%;
     max-width: 1100px;
@@ -17,7 +17,6 @@ div#columns figure {
     transition: opacity .4s ease-in-out;
     display: inline-block;
     column-break-inside: avoid;
-    cursor: pointer;
 }
 
 div#columns figure img {
@@ -34,22 +33,8 @@ div#columns figure figcaption {
     line-height: 1.5;
 }
 
-div#columns small {
-    font-size: 1rem;
-    float: right;
-    text-transform: uppercase;
-    color: #aaa;
-}
-
-div#columns small a {
-    color: #666;
-    text-decoration: none;
-    transition: .4s color;
-}
-
 div#columns:hover figure:not(:hover) {
-    opacity: 0.8;
-    /*transform: translateY(1px);*/
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 750px) {
@@ -62,106 +47,82 @@ div#columns:hover figure:not(:hover) {
     }
 }
 
-/* Search Form */
-.hide {
+/* Search Bar */
+.searchBar {
+    margin-top: 50px;
+    text-align: center;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+}
+
+label:before {
+    content: '';
+    height: 31px;
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    width: 22px;
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    pointer-events: none;
+    display: block;
+}
+
+label:after {
+    content: " ";
+    position: absolute;
+    right: 15px;
+    top: 46%;
+    margin-top: -3px;
+    z-index: 2;
+    pointer-events: none;
     width: 0;
     height: 0;
-    position: absolute;
-    line-height: 0;
+    border-style: solid;
+    border-width: 7px 4px 0 4px;
+    border-color: #aaa transparent transparent transparent;
+}
+
+label select {
+    margin: 0 5px 5px 0;
+    padding: 0 30px 0 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    line-height: 36px;
+    width: 180px;
+    height: 36px;
+    background: #fff;
+}
+
+select::-ms-expand {
     display: none;
 }
 
-.searchArea {
-    width: 750px;
-    border: 1px solid #d1d3d4;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(0 0 0 / 10%), -1px -1px 5px rgb(0 0 0 / 10%);
-    padding: 20px 30px 20px 180px;
-    position: relative;
-    margin: 50px auto;
-}
-
-.searchArea:before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url(https://www.animal.go.kr/front/images/sub/searchArea.png) no-repeat center center;
-    border-right: 1px solid #d1d3d4;
-    box-sizing: border-box;
-}
-
-.searchArea:after {
-    content: "SEARCH";
-    font-size: 16px;
-    text-align: center;
-    color: #000000;
-    font-weight: 500;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 150px;
-    height: 100%;
-    margin-top: 40px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-.searchArea .searchList > li {
-    display: block;
-    margin: 6px 0;
-    overflow: hidden;
-}
-
-.searchArea .searchList > li dl {
-    display: block;
-    float: left;
-    margin-left: 20px;
-}
-
-.searchArea .searchList > li dl:first-child {
-    margin-left: 0;
-}
-
-.searchArea .searchList > li dl dt {
-    font-size: 14px;
-    font-weight: normal;
-    color: #58595b;
-    text-align: left;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.searchArea .searchList > li dl dd {
-    display: inline-block;
-    font-family: '돋움', sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-}
-
-.searchBtn {
-    font-size: 11px;
-    font-weight: bold;
-    font-family: '돋움', sans-serif;
-    color: #ffffff;
-    background-color: #194b82;
+/* dataPicker */
+input {
+    border: 1px solid #c4c4c4;
     border-radius: 3px;
+    background-color: #fff;
+    margin: 0 5px 5px 0;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 36px;
+}
+
+#search-submit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    padding: 0 20px;
-    height: 24px;
-    line-height: 24px;
-}
-
-select {
-    background-color: #ffffff;
-}
-
-.inputDate {
-    background-image: url(https://www.animal.go.kr/front/images/common/ico-file.png);
-    background-repeat: no-repeat;
-    background-position: right 6px center;
-    padding-right: 20px;
+    margin: 0 5px 5px 0;
+    padding: 3px 5px;
+    cursor: pointer;
 }
