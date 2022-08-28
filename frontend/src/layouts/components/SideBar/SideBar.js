@@ -11,6 +11,7 @@ import PropType from 'prop-types'
 import React, { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import { LogoTitle } from '../../../UI/Text'
 import Footer from './Footer'
 
 const Container = styled.div`
@@ -22,12 +23,6 @@ const Container = styled.div`
   height: 100vh;
   background-image: linear-gradient(30deg, #0048bd, #44a7fd);
   border-top-right-radius: 80px;
-`
-
-const Paragraph = styled.p`
-  margin: 0;
-  padding: 40px 0;
-  cursor: pointer;
 `
 
 const MenuList = styled.ul`
@@ -82,7 +77,7 @@ const SideBar = (props) => {
 
   return (
     <Container className={className}>
-      <Paragraph onClick={() => handleClick('/')}>Pet Finder</Paragraph>
+      <LogoTitle onClick={() => handleClick('/')}>Pet Finder</LogoTitle>
       <MenuList>
         {menus.map((menu, menuIndex) => (
           <MenuItem key={menuIndex} onClick={() => handleClick(menu.link)}>
