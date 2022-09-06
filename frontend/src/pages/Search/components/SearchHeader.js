@@ -1,3 +1,4 @@
+import PropType from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { ActionButton } from '../../../UI/Button'
@@ -10,8 +11,9 @@ const Container = styled.div`
 `
 
 const SearchHeader = (props) => {
+  const { className } = props
   return (
-    <Container>
+    <Container className={className}>
       <Select
         defaultOption="전국"
         options={[
@@ -42,6 +44,10 @@ const SearchHeader = (props) => {
       <ActionButton>Search</ActionButton>
     </Container>
   )
+}
+
+React.PropType = {
+  className: PropType.string,
 }
 
 export default SearchHeader
