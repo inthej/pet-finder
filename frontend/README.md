@@ -14,6 +14,7 @@ $ yarn add --dev --exact prettier
 $ yarn add react-helmet
 $ yarn add react-datepicker
 $ yarn add validate.js
+$ yarn add env
 ```
 
 ## Reference
