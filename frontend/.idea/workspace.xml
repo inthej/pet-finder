@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="update: ReactUtils class and default formState modeling">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/services/SearchService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/utils/LogUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +98,7 @@
       <workItem from="1662260394502" duration="6700000" />
       <workItem from="1662472527267" duration="2410000" />
       <workItem from="1662712651259" duration="1638000" />
-      <workItem from="1662714793192" duration="2374000" />
+      <workItem from="1662714793192" duration="5926000" />
     </task>
     <task id="LOCAL-00001" summary="change npm to yarn">
       <created>1660567936413</created>

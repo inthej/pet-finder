@@ -54,8 +54,6 @@ const Search = (props) => {
     <>
       <SearchHeader className="header" />
       <SearchContent className="content" />
-      <input name="username" value={formState.values.username || ''} onChange={handleChange} />
-      <input name="email" value={formState.values.email || ''} onChange={handleChange} />
     </>
   )
 }
