@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="update: ReactUtils class and default formState modeling">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/pages/Search/components/SearchContent.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DONu2V7sE1lNd9OUVDkmmZNJBn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/Search/components" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Search/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/User/About" />
+      <recent name="$PROJECT_DIR$/src/layouts/components/TopLink" />
+      <recent name="$PROJECT_DIR$/src/layouts/components/Content" />
+      <recent name="$PROJECT_DIR$/src/layouts/components/SIdeBar" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="" />
+      <created>1660566389222</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660566389222</updated>
+      <workItem from="1660566390495" duration="5041000" />
+      <workItem from="1660655078222" duration="1699000" />
+      <workItem from="1660915925571" duration="18738000" />
+      <workItem from="1661016442249" duration="3253000" />
+      <workItem from="1661633004446" duration="15946000" />
+      <workItem from="1662260394502" duration="6700000" />
+      <workItem from="1662472527267" duration="2410000" />
+      <workItem from="1662712651259" duration="1638000" />
+      <workItem from="1662714793192" duration="2374000" />
+    </task>
+    <task id="LOCAL-00001" summary="change npm to yarn">
+      <created>1660567936413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660567936413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update Route path and RouteWithLayout component">
+      <created>1660572829748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660572829748</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update styled component">
+      <created>1660921052661</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660921052661</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update: global style">
+      <created>1660921694788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660921694788</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update: menus routes and apply prettier">
+      <created>1660964238921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660964238921</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update: sidebar footer menu routing and helmet">
+      <created>1660974251582</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660974251582</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update: links and cursor">
+      <created>1660975921022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660975921022</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update: Search component masonry layout and searchForm sample">
+      <created>1661019120536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661019120536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update: search bar html &amp; css">
+      <created>1661642397839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661642397839</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update: ui component select, button and text">
+      <created>1661675569491</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661675569491</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update: SearchHeader and DatePicker component">
+      <created>1662389003367</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662389003367</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update: SearchContent component">
+      <created>1662474540197</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662474540197</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update: ReactUtils class and default formState modeling">
+      <created>1662717073055</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662717073055</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="change npm to yarn" />
+    <MESSAGE value="update Route path and RouteWithLayout component" />
+    <MESSAGE value="update styled component" />
+    <MESSAGE value="update: global style" />
+    <MESSAGE value="update: menus routes and apply prettier" />
+    <MESSAGE value="update: sidebar footer menu routing and helmet" />
+    <MESSAGE value="update: links and cursor" />
+    <MESSAGE value="update: Search component masonry layout and searchForm sample" />
+    <MESSAGE value="update: search bar html &amp; css" />
+    <MESSAGE value="update: ui component select, button and text" />
+    <MESSAGE value="update: SearchHeader and DatePicker component" />
+    <MESSAGE value="update: SearchContent component" />
+    <MESSAGE value="update: ReactUtils class and default formState modeling" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: ReactUtils class and default formState modeling" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
