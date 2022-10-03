@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send('Hi')
 })
 
-require('./routes/book.route')(app)
+require('./route/search.route')(app)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

@@ -3,9 +3,11 @@
 ## Install
 ```
 $ npm init -y
-$ npm i express
+$ npm i express express-validator
+$ npm i nodemon
 $ npm i dotenv
 $ npm i mysql2
+$ npm i axios
 ```
 
 ## Reference
