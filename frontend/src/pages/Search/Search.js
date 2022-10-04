@@ -1,5 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import validate from 'validate.js'
+import AppConstants from '../../common/AppConstants'
+import { searchService } from '../../common/services/SearchService'
+import LogUtils from '../../common/utils/LogUtils'
 import ReactUtils from '../../common/utils/ReactUtils'
 import SearchContent from './components/SearchContent'
 import SearchHeader from './components/SearchHeader'
@@ -22,6 +25,9 @@ const validateConstraints = {
 const Search = (props) => {
   const {} = props
 
+  const [page, setPage] = useState({ page: 1, size: AppConstants.DEFAULT_PAGE_SIZE })
+  const [animalList, setAnimalList] = useState({ total: 0, page: { now: 1, total: 1 }, list: [] })
+
   const [formState, setFormState] = useState({
     isValid: false,
     values: {},
@@ -38,6 +44,25 @@ const Search = (props) => {
     }
   }, [])
 
+  const searchAnimalList = useCallback(async () => {
+    try {
+      setLoading(true)
+      const response = await searchService.animalList()
+      return response
+    } catch (err) {
+      LogUtils.debug('searchAnimalList err:', err)
+      return []
+    } finally {
+      if (isMounted.current) {
+        setLoading(false)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    searchAnimalList().then((res) => setAnimalList(res))
+  }, [searchAnimalList])
+
   useEffect(() => {
     const errors = validate(formState.values, validateConstraints)
     setFormState((prevState) => ({
@@ -50,6 +75,7 @@ const Search = (props) => {
   const handleChange = (event) => {
     ReactUtils.handleChange(event, setFormState)
   }
+
   return (
     <>
       <SearchHeader className="header" />

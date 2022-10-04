@@ -8,6 +8,7 @@ $ npm i nodemon
 $ npm i dotenv
 $ npm i mysql2
 $ npm i axios
+$ npm i cors
 ```
 
 ## Reference

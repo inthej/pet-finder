@@ -1,6 +1,9 @@
+const SearchService = require('../service/search.service')
+
 exports.sidoList = async (req, res) => {
   try {
-    res.status(200).json({ code: 200, success: true, obj: {} })
+    const response = await SearchService.sidoList(req.query)
+    res.status(200).json({ code: 200, success: true, obj: response })
   } catch (err) {
     res.status(500).json({ code: 500, success: false, message: '서버 에러', error: err })
   }
@@ -32,7 +35,8 @@ exports.kindList = async (req, res) => {
 
 exports.animalList = async (req, res) => {
   try {
-    res.status(200).json({ code: 200, success: true, obj: {} })
+    const response = await SearchService.animalList(req.query)
+    res.status(200).json({ code: 200, success: true, obj: response })
   } catch (err) {
     res.status(500).json({ code: 500, success: false, message: 'Interval Server Error', error: err })
   }
