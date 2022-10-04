@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="update: SearchService and LogUtils">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/common/app.constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/common/app.types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/common/util/value.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/model/paging.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/service/api/data.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/controller/search.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controller/search.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/route/search.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/route/search.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/route/validation/search.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/route/validation/search.schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/service/search.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/service/search.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/AppConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/AppConstants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/services/SearchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/SearchService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Search/components/SearchContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/components/SearchContent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +96,7 @@
       <workItem from="1664835800489" duration="169000" />
       <workItem from="1664836320986" duration="1000" />
       <workItem from="1664836327654" duration="17000" />
-      <workItem from="1664836521142" duration="5480000" />
+      <workItem from="1664836521142" duration="7277000" />
     </task>
     <task id="LOCAL-00001" summary="change npm to yarn">
       <created>1660567936413</created>

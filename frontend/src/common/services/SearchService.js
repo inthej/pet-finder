@@ -12,7 +12,7 @@ class SearchService {
     return this.#instance
   }
 
-  async sidoList(page) {
+  async sidoList() {
     try {
       const path = `${this.#url}/sidoList`
       const responseModel = await axios.get(path)
@@ -23,9 +23,9 @@ class SearchService {
     }
   }
 
-  async gunList(sido, page) {
+  async sigunguList(sido) {
     try {
-      const path = `${this.#url}/gunList`
+      const path = `${this.#url}/gunList&sido=${sido}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
@@ -34,9 +34,9 @@ class SearchService {
     }
   }
 
-  async shelterList(sido, gun, page) {
+  async shelterList(sido, sigungu) {
     try {
-      const path = `${this.#url}/shelterList`
+      const path = `${this.#url}/shelterList&sigo=${sido}&sigungu=${sigungu}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
@@ -45,9 +45,9 @@ class SearchService {
     }
   }
 
-  async kindList(type, page) {
+  async kindList(kindType) {
     try {
-      const path = `${this.#url}/kindList`
+      const path = `${this.#url}/kindList&kindType=${kindType}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
@@ -56,9 +56,18 @@ class SearchService {
     }
   }
 
-  async animalList(sido, gun, type, shelter, page) {
+  async animalList(model = {}, paging) {
+    const { start, end, kindType, sido, sigungu, shelter, state } = model
     try {
-      const path = `${this.#url}/animalList`
+      let path = `${this.#url}/animalList?size=100`
+      if (start) path += `&start=${start}`
+      if (end) path += `&end=${end}`
+      if (kindType) path += `&kindType=${kindType}`
+      if (sido) path += `&sido=${sido}`
+      if (sigungu) path += `&sigungu=${sigungu}`
+      if (shelter) path += `&shelter=${shelter}`
+      if (state) path += `&state=${state}`
+      path += `&page=${paging.page}&size=${paging.size}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {

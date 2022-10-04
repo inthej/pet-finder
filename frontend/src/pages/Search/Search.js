@@ -26,7 +26,7 @@ const Search = (props) => {
   const {} = props
 
   const [page, setPage] = useState({ page: 1, size: AppConstants.DEFAULT_PAGE_SIZE })
-  const [animalList, setAnimalList] = useState({ total: 0, page: { now: 1, total: 1 }, list: [] })
+  const [animalList, setAnimalList] = useState([])
 
   const [formState, setFormState] = useState({
     isValid: false,
@@ -47,7 +47,7 @@ const Search = (props) => {
   const searchAnimalList = useCallback(async () => {
     try {
       setLoading(true)
-      const response = await searchService.animalList()
+      const response = await searchService.animalList(undefined, page)
       return response
     } catch (err) {
       LogUtils.debug('searchAnimalList err:', err)
@@ -60,7 +60,7 @@ const Search = (props) => {
   }, [])
 
   useEffect(() => {
-    searchAnimalList().then((res) => setAnimalList(res))
+    searchAnimalList().then((res) => setAnimalList(res.obj.list))
   }, [searchAnimalList])
 
   useEffect(() => {
@@ -79,7 +79,7 @@ const Search = (props) => {
   return (
     <>
       <SearchHeader className="header" />
-      <SearchContent className="content" />
+      <SearchContent className="content" animalList={animalList} loading={loading} />
     </>
   )
 }

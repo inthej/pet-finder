@@ -6,7 +6,7 @@ const Container = styled.div`
   column-width: 236px;
   column-gap: 15px;
   width: 100%;
-  max-width: 1100px;
+  //max-width: 1100px;
   margin: 50px auto;
 
   @media screen and (max-width: 750px) {
@@ -106,15 +106,16 @@ const list = [
 ]
 
 const SearchContent = (props) => {
-  const { className } = props
+  const { className, animalList, loading } = props
   return (
     <Container className={className}>
-      {list.map((item) => (
-        <Figure key={item.id}>
-          <Image src={item.src} alt={item.alt} />
-          <Caption>{item.caption}</Caption>
-        </Figure>
-      ))}
+      {animalList &&
+        animalList.map((animal) => (
+          <Figure key={animal.desertionNo}>
+            <Image src={animal.popfile} alt={animal.desertionNo} />
+            <Caption>{animal.careAddr}</Caption>
+          </Figure>
+        ))}
     </Container>
   )
 }
