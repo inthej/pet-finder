@@ -1,5 +1,5 @@
 const { dataService } = require("./api/data.service");
-const Paging = require("../model/paging.model");
+const Paging = require("../models/paging.model");
 
 exports.sidoList = async () => {
   try {

@@ -1,0 +1,132 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.0.1",
+    "title": "PetFinder API",
+    "description": ""
+  },
+  "host": "localhost:3001",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Search",
+      "description": "유기동물 공공데이터"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/search/sidoList": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "시도 조회",
+        "description": "시도 조회",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "성공"
+          },
+          "500": {
+            "description": "내부 서버 오류"
+          }
+        }
+      }
+    },
+    "/search/sigunguList": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "시군구 조회",
+        "description": "시군구 조회",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "성공"
+          },
+          "500": {
+            "description": "내부 서버 오류"
+          }
+        }
+      }
+    },
+    "/search/shelterList": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "보호소 조회",
+        "description": "보호소 조회",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "성공"
+          },
+          "500": {
+            "description": "내부 서버 오류"
+          }
+        }
+      }
+    },
+    "/search/kindList": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "품종 조회",
+        "description": "품종 조회",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "성공"
+          },
+          "500": {
+            "description": "내부 서버 오류"
+          }
+        }
+      }
+    },
+    "/search/animalList": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "유기동물 조회",
+        "description": "유기동물 조회",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "성공"
+          },
+          "400": {
+            "description": "잘못된 요청"
+          },
+          "500": {
+            "description": "내부 서버 오류"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ]
+}

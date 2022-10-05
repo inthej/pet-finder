@@ -9,6 +9,7 @@ $ npm i dotenv
 $ npm i mysql2
 $ npm i axios
 $ npm i cors
+$ npm i swagger-ui-express swagger-autogen
 ```
 
 ## Reference

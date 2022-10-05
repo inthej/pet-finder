@@ -56,8 +56,8 @@ class SearchService {
     }
   }
 
-  async animalList(model = {}, paging) {
-    const { start, end, kindType, sido, sigungu, shelter, state } = model
+  async animalList(form = {}, paging) {
+    const { start, end, kindType, sido, sigungu, shelter, state } = form
     try {
       let path = `${this.#url}/animalList?size=100`
       if (start) path += `&start=${start}`

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="update: SearchService and LogUtils">
+    <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/swagger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/swagger_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/controller/search.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controllers/search.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/model/paging.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/models/paging.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/route/search.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/search.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/route/validation/search.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/validation/search.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/service/search.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/service/search.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/services/SearchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/SearchService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Search/components/SearchContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/components/SearchContent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +107,8 @@
       <workItem from="1664835800489" duration="169000" />
       <workItem from="1664836320986" duration="1000" />
       <workItem from="1664836327654" duration="17000" />
-      <workItem from="1664836521142" duration="7277000" />
+      <workItem from="1664836521142" duration="9034000" />
+      <workItem from="1664974250972" duration="543000" />
     </task>
     <task id="LOCAL-00001" summary="change npm to yarn">
       <created>1660567936413</created>
@@ -196,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662720970326</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: output animals on test &amp; fix width size at SearchContent">
+      <created>1664861052456</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664861052456</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +248,8 @@
     <MESSAGE value="update: SearchContent component" />
     <MESSAGE value="update: ReactUtils class and default formState modeling" />
     <MESSAGE value="update: SearchService and LogUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: SearchService and LogUtils" />
+    <MESSAGE value="feat: output animals on test &amp; fix width size at SearchContent" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: output animals on test &amp; fix width size at SearchContent" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
