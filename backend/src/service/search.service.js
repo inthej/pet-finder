@@ -1,9 +1,9 @@
 const { dataService } = require("./api/data.service");
 const Paging = require("../models/paging.model");
 
-exports.sidoList = async () => {
+exports.sido = async () => {
   try {
-    const response = await dataService.sidoList()
+    const response = await dataService.sido()
     return response
   } catch (err) {
     console.log(err)
@@ -11,10 +11,10 @@ exports.sidoList = async () => {
   }
 }
 
-exports.sigunguList = async (query) => {
+exports.sigungu = async (query) => {
   const { sido } = query
   try {
-    const response = await dataService.sigunguList(sido)
+    const response = await dataService.sigungu(sido)
     return response
   } catch (err) {
     console.log(err)
@@ -22,10 +22,10 @@ exports.sigunguList = async (query) => {
   }
 }
 
-exports.shelterList = async (query) => {
+exports.shelter = async (query) => {
   const { sido, sigungu } = query
   try {
-    const response = await dataService.shelterList(sido, sigungu)
+    const response = await dataService.shelter(sido, sigungu)
     return response
   } catch (err) {
     console.log(err)
@@ -33,10 +33,10 @@ exports.shelterList = async (query) => {
   }
 }
 
-exports.kindList = async (query) => {
+exports.kind = async (query) => {
   const { type } = query
   try {
-    const response = await dataService.kindList(type)
+    const response = await dataService.kind(type)
     return response
   } catch (err) {
     console.log(err)
@@ -44,16 +44,16 @@ exports.kindList = async (query) => {
   }
 }
 
-exports.animalList = async (query) => {
+exports.animals = async (query) => {
   const { start, end, kindType, sido, sigungu, shelter, state } = query
   try {
     const paging = Paging.request(query)
-    const response = await dataService.animalList(start, end, kindType, sido, sigungu, shelter, state, paging)
-    const list = response.items.item
+    const { items, pageNo, totalCount } = await dataService.animals(start, end, kindType, sido, sigungu, shelter, state, paging)
+    const list = items.item
     const responseModel = {
-      total: response.totalCount,
+      total: totalCount,
       page: {
-        now: response.pageNo,
+        now: pageNo,
         total: list?.length,
       },
       list: list

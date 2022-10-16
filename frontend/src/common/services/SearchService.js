@@ -12,54 +12,55 @@ class SearchService {
     return this.#instance
   }
 
-  async sidoList() {
+  async sido() {
     try {
-      const path = `${this.#url}/sidoList`
+      const path = `${this.#url}/sido`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
-      LogUtils.debug('SearchService.sidoList', err)
+      LogUtils.debug('SearchService.sido', err)
       throw err
     }
   }
 
-  async sigunguList(sido) {
+  async sigungu(sido) {
     try {
-      const path = `${this.#url}/gunList&sido=${sido}`
+      const path = `${this.#url}/sigungu&sido=${sido}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
-      LogUtils.debug('SearchService.gunList', err)
+      LogUtils.debug('SearchService.sigungu', err)
       throw err
     }
   }
 
-  async shelterList(sido, sigungu) {
+  async shelter(sido, sigungu) {
     try {
-      const path = `${this.#url}/shelterList&sigo=${sido}&sigungu=${sigungu}`
+      const path = `${this.#url}/shelter&sigo=${sido}&sigungu=${sigungu}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
-      LogUtils.debug('SearchService.shelterList', err)
+      LogUtils.debug('SearchService.shelter', err)
       throw err
     }
   }
 
-  async kindList(kindType) {
+  async kind(kindType) {
     try {
-      const path = `${this.#url}/kindList&kindType=${kindType}`
+      const path = `${this.#url}/kind&kindType=${kindType}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
-      LogUtils.debug('SearchService.kindList', err)
+      LogUtils.debug('SearchService.kind', err)
       throw err
     }
   }
 
-  async animalList(form = {}, paging) {
+  async animals(form = {}, paging) {
     const { start, end, kindType, sido, sigungu, shelter, state } = form
     try {
-      let path = `${this.#url}/animalList?size=100`
+      let path = `${this.#url}/animals`
+      path += `?page=${paging.page}&size=${paging.size}`
       if (start) path += `&start=${start}`
       if (end) path += `&end=${end}`
       if (kindType) path += `&kindType=${kindType}`
@@ -67,11 +68,10 @@ class SearchService {
       if (sigungu) path += `&sigungu=${sigungu}`
       if (shelter) path += `&shelter=${shelter}`
       if (state) path += `&state=${state}`
-      path += `&page=${paging.page}&size=${paging.size}`
       const responseModel = await axios.get(path)
       return responseModel.data
     } catch (err) {
-      LogUtils.debug('SearchService.animalList', err)
+      LogUtils.debug('SearchService.animals', err)
       throw err
     }
   }

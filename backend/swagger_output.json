@@ -30,7 +30,7 @@
     "application/json"
   ],
   "paths": {
-    "/search/sidoList": {
+    "/search/sido": {
       "get": {
         "tags": [
           "Search"
@@ -48,7 +48,7 @@
         }
       }
     },
-    "/search/sigunguList": {
+    "/search/sigungu": {
       "get": {
         "tags": [
           "Search"
@@ -66,7 +66,7 @@
         }
       }
     },
-    "/search/shelterList": {
+    "/search/shelter": {
       "get": {
         "tags": [
           "Search"
@@ -84,7 +84,7 @@
         }
       }
     },
-    "/search/kindList": {
+    "/search/kind": {
       "get": {
         "tags": [
           "Search"
@@ -102,7 +102,7 @@
         }
       }
     },
-    "/search/animalList": {
+    "/search/animals": {
       "get": {
         "tags": [
           "Search"

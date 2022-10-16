@@ -1,6 +1,6 @@
 const AppType = require('../../common/app.types')
 
-exports.AnimalList = {
+exports.Animals = {
   page: {
     optional: { options: { nullable: true, checkFalsy: true }},
     in: ['query'],

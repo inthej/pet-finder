@@ -25,7 +25,7 @@ const validateConstraints = {
 const Search = (props) => {
   const {} = props
 
-  const [page, setPage] = useState({ page: 1, size: AppConstants.DEFAULT_PAGE_SIZE })
+  const [page, setPage] = useState({ page: 1, size: AppConstants.SEARCH_PAGE_SIZE })
   const [animalList, setAnimalList] = useState([])
 
   const [formState, setFormState] = useState({
@@ -47,7 +47,7 @@ const Search = (props) => {
   const searchAnimalList = useCallback(async () => {
     try {
       setLoading(true)
-      const response = await searchService.animalList(undefined, page)
+      const response = await searchService.animals(undefined, page)
       return response
     } catch (err) {
       LogUtils.debug('searchAnimalList err:', err)

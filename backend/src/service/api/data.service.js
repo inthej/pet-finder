@@ -13,52 +13,52 @@ class DataService {
     return this.#instance
   }
 
-  async sidoList() {
+  async sido() {
     try {
       const path = this.#url + `/sido?serviceKey=${this.#serviceKey}&_type=json`
       const response = await axios.get(path)
       return response.data.response.body.items.item
     } catch (err) {
-      LogUtils.debug('DataService.sidoList', err)
+      LogUtils.debug('DataService.sido', err)
       throw err
     }
   }
 
-  async sigunguList(sido) {
+  async sigungu(sido) {
     try {
       const path = this.#url + `/sigungu?serviceKey=${this.#serviceKey}&upr_cd=${sido}&_type=json`
       const response = await axios.get(path)
       return response.data.response.body.items.item
     } catch (err) {
-      LogUtils.debug('DataService.sigunguList', err)
+      LogUtils.debug('DataService.sigungu', err)
       throw err
     }
   }
 
-  async shelterList(sido, sigungu) {
+  async shelter(sido, sigungu) {
     try {
       const path = this.#url + `/shelter?serviceKey=${this.#serviceKey}&upr_cd=${sido}&org_cd=${sigungu}&_type=json`
       const response = await axios.get(path)
       return response.data.response.body.items.item
     } catch (err) {
-      LogUtils.debug('DataService.shelterList', err)
+      LogUtils.debug('DataService.shelter', err)
       throw err
     }
   }
 
-  async kindList(kindType) {
+  async kind(kindType) {
     try {
       const path = this.#url + `/kind?serviceKey=${this.#serviceKey}&up_kind_cd=${kindType}`
       const response = await axios.get(path)
       return response.data.response.body.items.item
     } catch (err) {
-      LogUtils.debug('DataService.kindList', err)
+      LogUtils.debug('DataService.kind', err)
       throw err
     }
   }
 
 
-  async animalList(start, end, kindType, sido, sigungu, shelter, state, paging) {
+  async animals(start, end, kindType, sido, sigungu, shelter, state, paging) {
     try {
       let path = this.#url + `/abandonmentPublic?serviceKey=${this.#serviceKey}`
       if (start) path += `&bgnde=${start}`
@@ -74,7 +74,7 @@ class DataService {
       const responseModel = await axios.get(path)
       return responseModel.data.response.body
     } catch (err) {
-      LogUtils.debug('DataService.animalList', err)
+      LogUtils.debug('DataService.animals', err)
       throw err
     }
   }

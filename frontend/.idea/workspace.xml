@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73058643-116e-46c8-a9e5-a08219ccf6eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/swagger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/swagger_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/controller/search.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controllers/search.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/model/paging.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/models/paging.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/route/search.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/search.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/route/validation/search.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/validation/search.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/controllers/search.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controllers/search.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/routes/search.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/search.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/routes/validation/search.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/validation/search.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/service/api/data.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/service/api/data.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/src/service/search.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/service/search.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/swagger_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/swagger_output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/AppConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/AppConstants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/services/SearchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/SearchService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
